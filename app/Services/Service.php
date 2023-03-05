@@ -47,6 +47,9 @@ class Service
         $path = [];
         if($request->file('files') !== null){
             foreach($request->file('files') as $file){
+                if (!is_dir(storage_path("app/public/uploads"))) {
+                    mkdir(storage_path("app/public/uploads"), 0777, true);
+                }
                 $file_name = $file->getClientOriginalName();
                 if(strpos($file->getClientMimeType(), 'text') !== false){
                     if($file->getSize() > 100000){
