@@ -14,8 +14,9 @@
 6. __docker-compose up -d__
 7. Теперь откройте в браузере следующий адресс: [админка](http://localhost:8000/), а в полях "__пользователь__" и "__пароль__" введите слово "__root__". После возвращайтесь к терминалу.
 8. __docker exec -it laravel-app bash__
-9. __php artisan migrate__
-10. __php artisan storage:link__
-11. Если все шаги проделаны правильно, вы можете открыть [наш сайт](http://localhost:8080/).
+9. __composer install__
+10. __php artisan migrate__
+11. __php artisan storage:link__
+12. Если все шаги проделаны правильно, вы можете открыть [наш сайт](http://localhost:8080/).
 
 __docker-compose down -v__ (что бы свернуть приложение)
