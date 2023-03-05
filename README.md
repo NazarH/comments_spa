@@ -11,18 +11,7 @@
 * __git clone https://github.com/NazarH/comments_spa.git__
 * __cd comments_spa__
 * __cp .env.example .env__ 
-'''
-Теперь нужно редактировать файл .env:
-
-DB_CONNECTION=mysql
-DB_HOST=database
-DB_PORT=3306
-DB_DATABASE=comments_spa
-DB_USERNAME=root
-DB_PASSWORD=root
-
-После чего продолжаем вводить команды
-'''
+* Теперь нужно отредактировать несколько строчек файла __.env__: DB_HOST=__database__, DB_DATABASE=__comments_spa__, DB_PASSWORD=__root__. После чего продолжаем вводить команды.
 * __composer install__
 * __docker-compose build__
 * __docker-compose up -d__
