@@ -6,18 +6,34 @@
 
 # Инструкция по установке
 
-1. Запустите __установленый ранее Docker__;
-2. Создайте папку "__projects__", и откройте её в редакторе кода. Далее необходимо вводить команды в терминале.
-3. __git clone https://github.com/NazarH/comments_spa.git__
-4. __cd comments_spa__
-5. __composer install__
-6. cp .env.example .env 
-7. __docker-compose build__
-8. __docker-compose up -d__
-9. Теперь откройте в браузере следующий адресс: [админка](http://localhost:8000/), а в полях "__пользователь__" и "__пароль__" введите слово "__root__". После возвращайтесь к терминалу.
-10. __docker exec -it laravel-app bash__
-11. __php artisan migrate__
-12. __php artisan storage:link__
-13. Если все шаги проделаны правильно, вы можете открыть [наш сайт](http://localhost:8080/).
+* Запустите __установленый ранее Docker__;
+* Создайте папку "__projects__", и откройте её в редакторе кода. Далее необходимо вводить команды в терминале.
+* __git clone https://github.com/NazarH/comments_spa.git__
+* __cd comments_spa__
+* __cp .env.example .env__ 
+'''
+Теперь нужно редактировать файл .env:
+
+DB_CONNECTION=mysql
+DB_HOST=database
+DB_PORT=3306
+DB_DATABASE=comments_spa
+DB_USERNAME=root
+DB_PASSWORD=root
+
+После чего продолжаем вводить команды
+'''
+* __composer install__
+* __docker-compose build__
+* __docker-compose up -d__
+* __docker exec -it laravel-app bash__
+* __sudo chmod 777 . -R__
+* __php artisan migrate__
+* __php artisan storage:link__
+* __php artisan key:generate__
+* __php artisan config:cache__
+
+Если все шаги проделаны правильно, вы можете открыть проект - http://localhost:8080/
+Так же вы можете запустить админ-панель: http://localhost:8000/, а в полях "__пользователь__" и "__пароль__" введите слово "__root__".
 
 __docker-compose down -v__ (что бы свернуть приложение)
