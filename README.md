@@ -7,11 +7,11 @@
 # Инструкция по установке
 
 * Запустите __установленый ранее Docker__;
-* Создайте папку "__projects__", и откройте её в редакторе кода. Далее необходимо вводить команды в терминале.
+* Создайте папку "__projects__", и откройте её в редакторе кода. Далее необходимо вводить по порядку команды в терминале.
 * __git clone https://github.com/NazarH/comments_spa.git__
 * __cd comments_spa__
 * __cp .env.example .env__ 
-* Теперь нужно отредактировать несколько строчек файла __.env__: DB_HOST=__database__, DB_DATABASE=__comments_spa__, DB_PASSWORD=__root__. После чего продолжаем вводить команды.
+* Теперь нужно отредактировать несколько строчек файла __.env__: DB_HOST=__database__, DB_DATABASE=__comments_spa__, DB_PASSWORD=__root__ После чего продолжаем вводить команды.
 * __composer install__
 * __docker-compose build__
 * __docker-compose up -d__
