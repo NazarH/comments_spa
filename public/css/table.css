@@ -1,0 +1,87 @@
+table {
+    width: 843px;
+    border-spacing: 0 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+
+    margin-top: 8px;
+}
+
+.user-table{
+    width: 950px;
+}
+
+tr{
+    user-select: none;
+    cursor: pointer;
+}
+
+tr:first-child{
+    cursor: auto;
+}
+
+th {
+    padding: 10px 20px;
+    background: #D3D3D3;
+    color: black;
+    border-right: 2px solid white;
+    font-size: 0.9em;
+
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+th>a{
+    color: black;
+    cursor: pointer;
+}
+
+th>a:hover{
+    text-decoration: underline;
+}
+
+th:first-child {
+    text-align: left;
+    width: 25%;
+}
+
+th:nth-child(2){
+    width: 40%;
+    text-align: center;
+}
+
+th:last-child {
+    border-right: none;
+    text-align: center;
+}
+
+.th-border{
+    border-right: none;
+}
+
+td {
+    vertical-align: middle;
+    padding: 10px;
+    font-size: 14px;
+    border-top: 1px solid #D3D3D3;
+    border-bottom: 1px solid #D3D3D3;
+    border-right: 1px solid #D3D3D3;
+
+    background: #F0F0F0;
+}
+
+td:first-child{
+    padding-left: 20px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+td:last-child{
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+td:nth-child(2), td:nth-child(3){
+    text-align: center;
+}
+
+
